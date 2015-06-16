@@ -1,0 +1,24 @@
+{
+  "name": "node-oauth2-demo",
+  "version": "1.0.0",
+  "description": "oauth2 server using resource owner password credentials grant",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeromyevans/node-oauth2-resource-owner-password-credentials-grant.git"
+  },
+  "author": "Jeromy Evans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeromyevans/node-oauth2-resource-owner-password-credentials-grant/issues"
+  },
+  "homepage": "https://github.com/jeromyevans/node-oauth2-resource-owner-password-credentials-grant",
+  "dependencies": {
+    "body-parser": "^1.13.0",
+    "express": "^4.12.4",
+    "oauth2-server": "^2.4.0"
+  }
+}
