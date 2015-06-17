@@ -11,7 +11,9 @@ app.use(bodyParser.json());
 app.oauth = oauthserver({
   model: memorystore,
   grants: ['password', 'refresh_token'],
-  debug: true
+  debug: true,
+  accessTokenLifetime: memorystore.JWT_ACCESS_TOKEN_EXPIRY_SECONDS,   // expiry time in seconds, consistent with JWT setting in model.js
+  refreshTokenLifetime: memorystore.JWT_REFRESH_TOKEN_EXPIRY_SECONDS   // expiry time in seconds, consistent with JWT setting in model.js
 });
 
 app.all('/oauth/token', app.oauth.grant());
